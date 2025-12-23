@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+#fetchBtn {
+    display: block;
+    margin: 0 auto 30px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    background: white;
+    color: #667eea;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+#fetchBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+#fetchBtn:active {
+    transform: translateY(0);
+}
+
+#content {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    border: 5px solid #667eea;
+}
+
+.card h2, .card h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+#news-section h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.news-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.news-item h4 {
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.news-item h4 a {
+    text-decoration: none;
+    color: #667eea;
+    transition: color 0.3s;
+}
+
+.news-item h4 a:hover {
+    color: #764ba2;
+}
+
+.news-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.news-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .card {
+        padding: 15px;
+    }
+}
