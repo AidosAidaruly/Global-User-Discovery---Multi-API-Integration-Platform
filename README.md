@@ -20,48 +20,6 @@ This is a web application that integrates multiple APIs to display comprehensive
   - Exchange Rate API
   - News API
 
-## Installation & Setup
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm (Node Package Manager)
-
-### Installation Steps
-
-1. **Clone or download the project**
-   ```bash
-   cd your-project-folder
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Configure environment variables**
-   
-   Create a `.env` file in the root directory with the following content:
-   ```
-   NEWS_API_KEY=your_news_api_key
-   EXCHANGE_RATE_KEY=your_exchange_rate_api_key
-   PORT=3000
-   ```
-
-   **How to get API keys:**
-   - **News API**: Register at https://newsapi.org/ to get a free API key
-   - **Exchange Rate API**: Register at https://www.exchangerate-api.com/ to get a free API key
-
-4. **Run the application**
-   ```bash
-   node server.js
-   ```
-
-5. **Access the application**
-   
-   Open your browser and navigate to:
-   ```
-   http://localhost:3000
-   ```
 
 ## Project Structure
 ```
@@ -148,7 +106,7 @@ project/
 - Add map integration to show user's country
 
 ## Author
-Aidos (Student ID: if applicable)
+Aidos Aidaruly
 
 ## License
 This project is created for educational purposes as part of a Web Development course assignment.
