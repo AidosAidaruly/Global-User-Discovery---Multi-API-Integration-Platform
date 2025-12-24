@@ -7,7 +7,7 @@ async function fetchAndRender() {
     const countrySec = document.getElementById('country-section');
     const newsSec = document.getElementById('news-section');
     
-    // Показываем загрузку
+    
     contentDiv.style.display = 'block';
     userSec.innerHTML = '<div class="card"><p>Loading...</p></div>';
 
@@ -22,12 +22,12 @@ async function fetchAndRender() {
         const data = await response.json();
         console.log('Received data:', data);
 
-        // Проверяем наличие данных пользователя
+        
         if (!data.user) {
             throw new Error('User data is missing');
         }
 
-        // Отображаем информацию о пользователе
+        
         userSec.innerHTML = `
             <div class="card">
                 ${data.user.photo ? `<img src="${data.user.photo}" alt="Profile">` : '<p>No photo available</p>'}
@@ -37,7 +37,7 @@ async function fetchAndRender() {
             </div>
         `;
 
-        // Отображаем информацию о стране
+        
         countrySec.innerHTML = `
             <div class="card">
                 ${data.country.flag ? `<img src="${data.country.flag}" width="100" alt="Flag">` : ''}
@@ -48,7 +48,7 @@ async function fetchAndRender() {
             </div>
         `;
 
-        // Отображаем новости
+      
         if (data.news && data.news.length > 0) {
             newsSec.innerHTML = '<h3>Local News</h3>' + data.news.map(n => `
                 <div class="news-item">
@@ -77,8 +77,9 @@ async function fetchAndRender() {
 
 document.getElementById('fetchBtn').addEventListener('click', fetchAndRender);
 
-// Автоматический вызов при загрузке для дебага
+
 window.addEventListener('load', () => {
     console.log('window.load - auto fetching');
     fetchAndRender();
+
 });
