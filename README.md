@@ -1,5 +1,11 @@
-# Global-User-Discovery---Multi-API-Integration-Platform
-This project is a full-stack web application that demonstrates the integration of multiple REST APIs to create a comprehensive user information platform. The application generates random user profiles and enriches them with relevant data from various sources, providing users with an engaging and informative experience.
+# Global User Discovery Platform
+
+## Overview
+
+Global User Discovery Platform is a full-stack web application that integrates multiple external REST APIs to generate comprehensive user profiles enriched with country, currency, and news information.
+The project demonstrates API integration, backend development, asynchronous data processing, and full-stack web application architecture using Node.js and Express.
+The application collects information from multiple independent services and combines them into a single user-friendly interface.
+
 # Random User Information Application
 
 ## Project Description
@@ -104,6 +110,31 @@ project/
 - Add more data visualization (charts, graphs)
 - Include weather information for user's location
 - Add map integration to show user's country
+
+  ## Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+- REST API integration
+- Asynchronous JavaScript programming
+- Backend development with Express.js
+- API security and environment variables
+- Error handling and fault tolerance
+- Front-end and back-end communication
+- Data aggregation from multiple sources
+
+  ## My Contribution
+
+I implemented:
+
+- Express.js backend architecture
+- Integration of four external APIs
+- User interface development
+- API response processing
+- Currency conversion functionality
+- News retrieval system
+- Error handling mechanisms
+- Responsive front-end design
 
 ## Author
 Aidos Aidaruly
